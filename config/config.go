@@ -10,7 +10,7 @@ type Config struct {
 func Load() Config {
 	return Config{
 		DatabaseURL: getenv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/users_db?sslmode=disable"),
-		ServerAddr:  getenv("SERVER_ADDR", ":8081"),
+		ServerAddr:  getenv("SERVER_ADDR", ":8080"),
 	}
 }
 
